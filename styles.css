@@ -179,6 +179,7 @@ Experience and additional info styles
 
 .experiences__header {
   color: var(--secondary-text-color);
+  font-weight: 700; 
   text-align: left;
   margin-bottom: 20px;
 }
