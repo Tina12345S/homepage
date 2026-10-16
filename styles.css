@@ -1,6 +1,4 @@
-General styles
-
-* {
+General styles * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -68,9 +66,7 @@ body {
     margin-right: 0;
   }
 }
-Contact info styles
-
-.contact-info__header,
+Contact info styles .contact-info__header,
 .contact-info__sub-header {
   text-align: center;
 }
@@ -132,9 +128,7 @@ Contact info styles
   border: 3px solid;
   border-color: var(--text-decoration-color);
 }
-Intro and skills styles
-
-.intro {
+Intro and skills styles .intro {
   display: flex;
   justify-content: start;
 }
@@ -166,20 +160,27 @@ Intro and skills styles
   margin-bottom: 15px;
 }
 
-.skills__text {
-  color: var(--secondary-text-color);
-  text-align: justify;
+.skills__list {
+  column-count: 2;
+  column-gap: 40px;
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 20px 0;
 }
-Experience and additional info styles
+@media (max-width: 768px) {
+  .skills__list {
+    column-count: 1;
+  }
+}
 
-.experiences {
+Experience and additional info styles .experiences {
   flex: 1 1 60%;
   margin-right: 50px;
 }
 
 .experiences__header {
   color: var(--secondary-text-color);
-  font-weight: 700; 
+  font-weight: 700;
   text-align: left;
   margin-bottom: 20px;
 }
