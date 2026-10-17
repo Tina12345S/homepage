@@ -340,20 +340,19 @@
                 </ul>
       </div> 
 
- <div class="additional-info__languages" style="margin-top: 25px;">
+  <!-- БЛОК МОВ, ЯКИЙ ЗАЛИШАЄТЬСЯ В ПРАВІЙ КОЛОНЦІ -->
+        <div class="additional-info__languages" style="margin-top: 25px;">
           <h3 class="additional-info__languages-header">Languages</h3>
           <p class="additional-info__languages-item">Ukrainian — Native</p>
           <p class="additional-info__languages-item">English — Intermediate (B1)</p>
         </div>
 
-      </div> <!-- 1. ЗАКРИВАЄМО ПРАВУ КОЛОНКУ -->
-    </div> <!-- 2. ЗАКРИВАЄМО КОНТЕЙНЕР ДВОХ КОЛОНОК (тепер усе, що нижче, впаде вниз) -->
+      </div> <!-- 1. Закриваємо внутрішню частину правої колонки -->
+    </div> <!-- 2. Закриваємо контейнер головних колонок -->
 
-    <!-- ТУТ ПОЧИНАЄТЬСЯ НАШ НИЖНІЙ БЛОК (ВІН УСЕРЕДИНІ РЕЗЮМЕ, АЛЕ ПОЗА КОЛОНКАМИ) -->
-    <div class="additional-info-bottom" style="margin-top: 40px; padding-top: 25px; border-top: 2px solid var(--text-decoration-color, #ff6b00); width: 100%;">
-      <h3 class="additional-info__education-header" style="margin-bottom: 20px; color: var(--text-decoration-color, #ff6b00);">
-        Additional Information
-      </h3>
+    <!-- 3. БЛОК, ЯКИЙ ПРИМУСОВО СТАЄ ВНИЗ НА ВСЮ ШИРИНУ СІТКИ -->
+    <div class="additional-info-bottom" style="grid-column: 1 / -1; flex-basis: 100%; width: 100%; margin-top: 40px; padding-top: 25px; border-top: 2px solid var(--text-decoration-color, #ff6b00); clear: both;">
+      <h3 class="additional-info__education-header" style="margin-bottom: 20px; color: var(--text-decoration-color, #ff6b00);">Additional Information</h3>
       
       <p class="additional-info__languages-item" style="margin-bottom: 15px; text-align: justify; line-height: 1.6;">
         <strong>💪 Strengths &amp; Qualities:</strong> High attention to small details (thanks to sewing ✂️), patience, structured thinking, analytical problem-solving, proactive mindset with good communication and interpersonal skills.
@@ -364,7 +363,7 @@
       </p>
 
       <!-- Енергетична пасхалка -->
-      <div class="additional-info__energy" style="margin-top: 25px; padding: 12px; border-left: 3px solid var(--text-decoration-color, #ff6b00); background: #fafafa; border-radius: 4px;">
+      <div class="additional-info__energy" style="margin-top: 25px; padding: 12px; border-left: 3px solid var(--text-decoration-color, #ff6b00); background: #fafafa; border-radius: 4px; width: 100%; box-sizing: border-box;">
         <p class="additional-info__languages-item" style="margin: 0;">
           <strong>⚡ Current QA Energy Level:</strong>
           <span style="color: green; font-weight: bold">95%</span>
@@ -376,8 +375,8 @@
       </div>
     </div>
 
-  </div> <!-- Закриваємо resume__block (білу картку резюме) ОДИН раз у самому кінці -->
-</div> <!-- Закриваємо container ОДИН раз у самому кінці -->
+  </div> <!-- 4. Закриваємо білу картку всього резюме (resume__block) -->
+</div> <!-- 5. Закриваємо загальний зовнішній контейнер (container) -->
 </main>
 </body>
 </html>
